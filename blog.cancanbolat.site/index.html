@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="scroll-smooth">
+    <div class="relative min-h-screen md:flex">
+        <div class="bg-gray-800 lg:fixed lg:top-0 lg:left-0 lg:h-full md:fixed md:top-0 md:left-0 md:h-full">
+            <!-- mobile menu bar -->
+            <div class="bg-gray-800 text-gray-100 flex justify-between md:hidden">
+                <!-- logo -->
+                <a href="/" class="block p-4 text-white font-bold">Home</a>
+
+                <!-- mobile menu button -->
+                <button class="mobile-menu-button p-4 focus:outline-none focus:bg-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- sidebar -->
+            <div class="sidebar bg-gray-800 text-blue-100 w-full md:h-36 py-4 px-2 absolute md:inset-y-0
+            inset-left-0 transform -translate-x-full md:relative md:-translate-x-0.5 flex flex-col place-items-center">
+                <a class="text-white space-x-10">
+                    <img class="rounded-full w-48 mx-5 my-5" src="https://avatars.githubusercontent.com/u/65857296?v=4"
+                        alt="">
+                    <span class="text-2xl font-extrabold">Can Canbolat</span>
+                </a>
+                <!-- nav -->
+                <nav class="my-5">
+                    <a href="/" class="block py-2.5 px-4 rounded transition duration-200
+                    hover:bg-blue-700 hover:text-white">Home</a>
+                    <a href="https://github.com/cancanbolat" class="block py-2.5 px-4 rounded transition duration-200
+                    hover:bg-blue-700 hover:text-white">GitHub</a>
+                    <a href="https://www.linkedin.com/in/can-c-820779181/" class="block py-2.5 px-4 rounded transition duration-200
+                    hover:bg-blue-700 hover:text-white">LinkedIn</a>
+                    <a href="https://twitter.com/cancanbolat_" class="block py-2.5 px-4 rounded transition duration-200
+                    hover:bg-blue-700 hover:text-white">Twitter</a>
+                </nav>
+            </div>
+        </div>
+        <!-- content -->
+        <div class="content flex-1 text-2xl font-bold md:ml-60">
+            <!-- header -->
+            <div class="bg-gray-100 block w-full h-32">
+                <div class="header-content flex lg:mx-80 p-4 12 mx-10 sm:mx-10 md:mx-16">
+                    <!-- <p class="lg:text-4xl">Can Canbolat</p>
+                    <span class="lg:text-4xl mx-2 -my-1.5">.</span>
+                    <p class="lg:text-4xl">DevBlog</p> -->
+                    <p>Categories...</p>
+                </div>
+                <hr class="">
+            </div>
+            <!-- post -->
+            <div class="max-w-md mx-auto rounded bg-white overflow-hidden md:max-w-xl mt-7 p-5">
+                <div class="md:flex">
+                    <div class="md:shrink-0">
+                        <img class="h-48 w-full object-cover md:h-full md:w-48" src="/assets/images/tailwind.jpg"
+                            alt="Man looking at item at a store">
+                    </div>
+                    <div class="px-3 w-max block">
+                        <a href="post-detail.html" class="text-xs lg:text-lg md:text-lg font-medium underline ellipsis">Finding
+                            customers for your new business</a>
+                        <div class="flex mt-1">
+                            <span class="text-sm text-slate-500 font-semibold">January 30, 2022</span>
+                            <span class="text-sm mx-1 -my-0.5">.</span>
+                            <span class="text-sm text-slate-500 font-semibold">#Category</span>
+                        </div>
+                        <p
+                            class="mt-2 text-xs lg:text-md md:text-md font-semibold text-slate-800 ellipsis overflow-hidden">
+                            Lorem Ipsum is simply dummy text of the printing and typeset...</p>
+                        <a href="post-detail.html" class="text-green-700 text-sm hover:underline cursor-pointer">Read more →</a>
+                    </div>
+                </div>
+            </div>
+            <!-- post -->
+            <div class="max-w-md mx-auto rounded bg-white overflow-hidden md:max-w-xl mt-7 p-5">
+                <div class="md:flex">
+                    <div class="md:shrink-0">
+                        <img class="h-48 w-full object-cover md:h-full md:w-48" src="/assets/images/html-css.jpg"
+                            alt="Man looking at item at a store">
+                    </div>
+                    <div class="px-3 w-max block">
+                        <a href="post-detail.html" class="text-xs lg:text-lg md:text-lg font-medium underline ellipsis">Finding
+                            customers for your new business</a>
+                        <div class="flex mt-1">
+                            <span class="text-sm text-slate-500 font-semibold">January 30, 2022</span>
+                            <span class="text-sm mx-1 -my-0.5">.</span>
+                            <span class="text-sm text-slate-500 font-semibold">#Category</span>
+                        </div>
+                        <p
+                            class="mt-2 text-xs lg:text-md md:text-md font-semibold text-slate-800 ellipsis overflow-hidden">
+                            Lorem Ipsum is simply dummy text of the printing and typeset...</p>
+                        <a href="post-detail.html" class="text-green-700 text-sm hover:underline cursor-pointer">Read more →</a>
+                    </div>
+                </div>
+            </div>
+            <!-- post -->
+            <div class="max-w-md mx-auto rounded bg-white overflow-hidden md:max-w-xl mt-7 p-5">
+                <div class="md:flex">
+                    <div class="md:shrink-0">
+                        <img class="h-48 w-full object-cover md:h-full md:w-48" src="/assets/images/scss.jpg"
+                            alt="Man looking at item at a store">
+                    </div>
+                    <div class="px-3 w-max block">
+                        <a href="post-detail.html" class="text-xs lg:text-lg md:text-lg font-medium underline ellipsis">Finding
+                            customers for your new business</a>
+                        <div class="flex mt-1">
+                            <span class="text-sm text-slate-500 font-semibold">January 30, 2022</span>
+                            <span class="text-sm mx-1 -my-0.5">.</span>
+                            <span class="text-sm text-slate-500 font-semibold">#Category</span>
+                        </div>
+                        <p
+                            class="mt-2 text-xs lg:text-md md:text-md font-semibold text-slate-800 ellipsis overflow-hidden">
+                            Lorem Ipsum is simply dummy text of the printing and typeset...</p>
+                        <a href="post-detail.html" class="text-green-700 text-sm hover:underline cursor-pointer">Read more →</a>
+                    </div>
+                </div>
+            </div>
+            <!-- post -->
+            <div class="max-w-md mx-auto rounded bg-white overflow-hidden md:max-w-xl mt-7 p-5">
+                <div class="md:flex">
+                    <div class="md:shrink-0">
+                        <img class="h-48 w-full object-cover md:h-full md:w-48" src="/assets/images/bootstrap.jpg"
+                            alt="Man looking at item at a store">
+                    </div>
+                    <div class="px-3 w-max block">
+                        <a href="post-detail.html" class="text-xs lg:text-lg md:text-lg font-medium underline ellipsis">Finding
+                            customers for your new business</a>
+                        <div class="flex mt-1">
+                            <span class="text-sm text-slate-500 font-semibold">January 30, 2022</span>
+                            <span class="text-sm mx-1 -my-0.5">.</span>
+                            <span class="text-sm text-slate-500 font-semibold">#Category</span>
+                        </div>
+                        <p
+                            class="mt-2 text-xs lg:text-md md:text-md font-semibold text-slate-800 ellipsis overflow-hidden">
+                            Lorem Ipsum is simply dummy text of the printing and typeset...</p>
+                        <a href="post-detail.html" class="text-green-700 text-sm hover:underline cursor-pointer">Read more →</a>
+                    </div>
+                </div>
+            </div>
+            <!-- post -->
+            <div class="max-w-md mx-auto rounded bg-white overflow-hidden md:max-w-xl mt-7 p-5">
+                <div class="md:flex">
+                    <div class="md:shrink-0">
+                        <img class="h-48 w-full object-cover md:h-full md:w-48" src="/assets/images/bulmacss.png"
+                            alt="Man looking at item at a store">
+                    </div>
+                    <div class="px-3 w-max block">
+                        <a href="post-detail.html" class="text-xs lg:text-lg md:text-lg font-medium underline ellipsis">Finding
+                            customers for your new business</a>
+                        <div class="flex mt-1">
+                            <span class="text-sm text-slate-500 font-semibold">January 30, 2022</span>
+                            <span class="text-sm mx-1 -my-0.5">.</span>
+                            <span class="text-sm text-slate-500 font-semibold">#Category</span>
+                        </div>
+                        <p
+                            class="mt-2 text-xs lg:text-md md:text-md font-semibold text-slate-800 ellipsis overflow-hidden">
+                            Lorem Ipsum is simply dummy text of the printing and typeset...</p>
+                        <a href="post-detail.html" class="text-green-700 text-sm hover:underline cursor-pointer">Read more →</a>
+                    </div>
+                </div>
+                <div class="buttons py-10 flex">
+                    <button
+                        class="w-44 md:w-70 lg:w-96 bg-gray-800 text-white font-semibold lg:px-20 lg:py-3 py-2 px-10 rounded mr-1 hover:bg-gray-700 transition">Previous</button>
+                    <button
+                        class="w-44 md:w-70 lg:w-96 bg-gray-800 text-white font-semibold lg:px-24 lg:py-3 py-2 px-10 rounded ml-1 hover:bg-gray-700 transition">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const button = document.querySelector('.mobile-menu-button')
+        const sidebar = document.querySelector('.sidebar')
+        const content = document.querySelector('.content')
+
+        button.addEventListener('click', () => {
+            sidebar.classList.toggle('-translate-x-full')
+            content.classList.toggle('mt-96')
+        })
+    </script>
+</body>
+
+</html>
